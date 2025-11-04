@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
 
 int main()
@@ -33,7 +34,25 @@ int main()
     }*/
     cout << "Zadanie 3: " << endl;
     int tab[10];
+    int suma;
+    double srednia;
+    int najwieksza = 0;
+	for (int i = 0; i < 10; i += 1) {
+        int los = rand();
+        tab[i] = los;
+        suma += tab[i];
 
+        
+	}
+    for (int i = 0; i < 10; i += 1) {
+        if (tab[i] > najwieksza) {
+            najwieksza = tab[i];
+        }
+    }
+    
+    srednia = suma / 10.0;
+    cout << "Srednia: " << srednia << endl;
+    cout << "Najwieksza liczba: " << najwieksza << endl;
     
 }
 
